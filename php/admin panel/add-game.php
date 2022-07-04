@@ -54,9 +54,9 @@ if ($stmt_game && $stmt_subject) {
   echo '<html>';
   echo '<head>';
 
-  echo '<link rel = "icon" href="images/title_icon.png" type="image/x-icon"/>';
+  echo '<link rel = "icon" href="../../images/title_icon.png" type="image/x-icon"/>';
   echo '<title>Add Game | Admin Panel</title>';
-  echo '<link rel="stylesheet" href="css/style-admin.css">';
+  echo '<link rel="stylesheet" href="../../css/style-admin.css">';
   echo '<link rel="preconnect" href="https://fonts.gstatic.com">';
   echo '<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">';
   echo '</head>';
@@ -82,9 +82,9 @@ $subjects = $pdo->query($query_select_subject)->fetchAll();
   <html>
   
     <head>
-      <link rel = "icon" href="images/title_icon.png" type="image/x-icon"/>
+      <link rel = "icon" href="../../images/title_icon.png" type="image/x-icon"/>
     	<title>Add Game | Admin Panel</title>
-      <link rel="stylesheet" href="css/style-admin.css">
+      <link rel="stylesheet" href="../../css/style-admin.css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -94,7 +94,7 @@ $subjects = $pdo->query($query_select_subject)->fetchAll();
     	<div class="main-container">
     		<h1 align="center">New Game</h1>
     		<div class="form-center">
-    			<form action="add-college.php" method="POST">
+    			<form action="add-game.php" method="POST">
     				<label for="name">Game Name: </label>
     				<input type="text" name="name" id="name" />
     				<br/>

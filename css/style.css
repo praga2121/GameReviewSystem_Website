@@ -6,11 +6,11 @@
     -moz-osx-font-smoothing: grayscale;
 }
 body {
-    background-color: #FFFFFF;
+    background-color: #401164;
     margin: 0;
 }
 .navtop {
-    background-color: #373b37;
+    background-color: #440b49;
     height: 60px;
     width: 100%;
     border: 0;
@@ -54,5 +54,5 @@ body {
     padding: 25px 0;
     font-size: 22px;
     border-bottom: 1px solid #ebebeb;
-    color: #666666;
+    color: #f2e4e4;
 }

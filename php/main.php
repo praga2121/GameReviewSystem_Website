@@ -10,6 +10,7 @@ ORDER BY overall_rating DESC";
 
 //associative array of 'games' table
 $result = mysqli_query($conn, $sql);
+
 //number of row in "games" table
 $resultsCheck = mysqli_num_rows($result);
 

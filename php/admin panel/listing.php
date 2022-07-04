@@ -39,7 +39,7 @@ if (isset($_POST['added'])) {
       <td><?= $row['name'] ?></td>
       <td>
         <div>
-          <a class='edit-button' href='edit-game.php?id=<?= $row['game_id']?>'>Edit</a>
+          
           <a 
             class='delete-button' 
             href='delete-game.php?id=<?= $row['game_id']?>'

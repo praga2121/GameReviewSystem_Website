@@ -59,7 +59,9 @@ label{
 h1{
   font-size: 50px;
 }
-
+h2{
+  color: white;
+}
 .top-intro-header{
   margin-bottom: 100px;
   padding-top: 250px;

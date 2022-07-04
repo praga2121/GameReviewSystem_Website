@@ -30,7 +30,7 @@ $game_id = $row['game_id'];
 <?php
 include '../support elements/nav_wide.php';
 
-echo '<div class="featured-container-colleges" style="background-image: url(\'../../images/' . $row["name"] . '.jpg\')">';
+echo '<div class="featured-container-games" style="background-image: url(\'../../images/' . $row["name"] . '.jpg\')">';
 echo ' <div class="overlay">';
 echo '<h1 style="padding-top: 250px; padding-bottom: 250px; color: #FFFFFF;">' . $row["name"] . '</h1>';
 echo '  </div>';
