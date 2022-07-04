@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 30px;
+  background-color: #333;
+}
+li {
+  display: inline;
+  margin-right: 50px;
+}
+a, h1,h2, th, td, h3,input, p{
+  font-family: 'Montserrat';
+  
+}
+.bold{
+  font-weight: bold;
+}
+label{
+  font-family: 'Montserrat';
+  color: #333;
+  display: inline-block;
+  width: 422px;
+}
+.login-label{
+  font-family: 'Montserrat';
+  color: #333;
+  display: inline-block;
+  width: 200px;
+}
+.login-container{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  }
+.price-label{
+  font-family: 'Montserrat';
+  color: #333;
+  display: inline-block;
+  width: 400px;
+  margin-bottom:20px ;
+  }  
+.email{
+  font-family: 'Montserrat';
+}
+.password{
+  font-family: 'Montserrat';
+}
+.form-center {
+	display:flex;
+	justify-content: center;
+}
+h1{
+  font-size: 50px;
+}
+
+.top-intro-header{
+  margin-bottom: 100px;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  color: #ffffff;
+}
+.main-container-header{
+  margin-top: 100px;
+  margin-bottom:100px;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 150%;
+}
+.black{
+  text-decoration: none;
+  color: #000;
+}
+.add-button{
+  color: #333333;
+  margin-left: 45%;
+  border-style: solid;
+  padding: 10px;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.edit-button{
+  color: #333333;
+  margin-right: 100px;
+}
+.save-button{
+  color:#333333;
+  border-style: solid;
+  padding: 10px;
+}
+.submit-button{
+  color:#333333;
+  border-style: solid;
+  padding: 10px;
+}
+.delete-button{
+  color: #c00000;
+  text-align: right;
+}
+table{
+  width: 80%;
+  height: 60%;
+  margin: 20px auto 60px;
+  text-align: center;
+  border-collapse: collapse;
+}
+th{
+  background-color: #333333;
+  color:#eee;
+}
+td{
+  width:1%;
+}
+tr{
+  transition: all .2s ease-in-out;
+}
+thead{
+  
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .1);
+}
+tbody tr:nth-child(n):hover {
+  background-color:#ddd;
+  transform: scale(1.02);
+}
+.selected-row{
+  background-color:rgb(230, 230, 230);
+  transform:scale(1.02);
+}
+.table-row-link{
+  font-size: inherit;
+  color:inherit;
+}
+footer{
+  background-color: #333;
+  margin-bottom:-30px;
+}
+.overlay{
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
