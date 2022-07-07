@@ -26,7 +26,7 @@
     border: 0;
 }
 .reviews .write_review_btn:hover, .reviews .write_review button:hover {
-    background-color: white;
+    background-color: #cb1acb;
 }
 .reviews .write_review {
     display: none;
@@ -59,7 +59,7 @@
     padding: 0 0 3px 0;
     margin: 0;
     font-size: 18px;
-    color: #555555;
+    color: white;
 }
 .reviews .review .rating {
     letter-spacing: 2px;
@@ -74,10 +74,11 @@ select {
     margin-top: 10px;
 }
 .reviews .review .date {
-    color: #574f4f;
+    color: white;
     font-size: 14px;
 }
 .reviews .review .content {
+    color:white
     padding: 5px 0;
 }
 .reviews .review:last-child {

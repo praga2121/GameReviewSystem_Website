@@ -118,7 +118,7 @@ $subjects = $pdo->query($query_select_subject)->fetchAll();
                 <label class="price-label"for="subjects" ><?= $subject["name"] ?></label>
 
                 <input type="number" name="subject[<?= $increment?>][price]" min="1" disabled placeholder="Enter Price"/>
-                <input type="number" name="subject[<?= $increment?>][duration]" min="1" step=".1" disabled placeholder="Enter Duration"/>
+                <input type="number" name="subject[<?= $increment?>][duration]" min="1" step=".1" disabled placeholder="Enter Released Since"/>
               </div>
             <?php
             $increment = $increment + 1; 
@@ -134,6 +134,7 @@ $subjects = $pdo->query($query_select_subject)->fetchAll();
     </body>
 
 </html>
+
   <?php
 }
 ?>

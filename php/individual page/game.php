@@ -9,6 +9,7 @@ $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 
 $game_id = $row['game_id'];
+
 ?>
 
 <!DOCUMENT html>
@@ -36,9 +37,9 @@ echo '<h1 style="padding-top: 250px; padding-bottom: 250px; color: #FFFFFF;">' .
 echo '  </div>';
 echo '</div>';
 echo '<main>';
-echo '<h2 class="subject-header">Official Link</h2>';
+echo '<h2 class="subject-header">Official Game Site</h2>';
 echo '<a class="black" href="'.$row['url'].'">' . $row["url"] . '</a>';
-echo '<h2 class="subject-header">Description</h2>';
+echo '<h2 class="subject-header">Game Description</h2>';
 echo '<p class="game-description">' . $row["game_description"] . '</p>';
 
 echo '<div class="subject-container">';
@@ -61,7 +62,7 @@ if ($row_number > 0) {
     while ($row_subject = mysqli_fetch_assoc($result_subject)) {
         echo '<table class="subject-table">';
         echo '<tr>';
-        echo '<th style="width: 40%;background-color: #ebbc3d;">' . $row_subject["name"] . '</th>';
+        echo '<th style="width: 70%;background-color: rgb(79, 17, 86); color:white">' . $row_subject["name"] . '</th>';
         echo '</tr>';
 
 		echo '<tr>';
@@ -73,7 +74,7 @@ if ($row_number > 0) {
         echo '</tr>';
 
 		echo '<tr>';
-        echo '<td style="font-weight:bold">'."Duration".'</td>';
+        echo '<td style="font-weight:bold">'."Released Since".'</td>';
         echo '</tr>';
 
 		echo '<tr>';
@@ -91,7 +92,7 @@ if ($row_number > 0) {
 
 <div class="content home">
 		<h2 style="font-family: 'Montserrat'">Reviews</h2>
-		<p style="font-family: 'Montserrat'">Check out the below reviews for this game.</p>
+		<p style="font-family: 'Montserrat'; color:white">Check out the below reviews for this game.</p>
 		<div class="reviews"></div>
 
 

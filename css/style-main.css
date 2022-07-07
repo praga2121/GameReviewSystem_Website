@@ -9,7 +9,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 30px;
-  background-color: #333;
+  background-color: rgb(79, 17, 86);
 }
 
 li {
@@ -79,8 +79,9 @@ tbody tr:nth-child(n):hover {
   font-size: inherit;
   color:inherit;
 }
+
 footer{
-  background-color: #333;
+  background-color: rgb(79, 17, 86);
   margin-bottom:-30px;
 }
 
@@ -88,13 +89,16 @@ footer{
   height: 600px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .featured-container{
   margin-top: -35px;
+  background-image: url("../images/featured-home2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   color: purple;
 }
+
 .featured-container-games{
   margin-top: -35px;
   background-repeat: no-repeat;
@@ -130,7 +134,6 @@ main{
   color:white
 }
 /*TABLE SORT END */
-
 
 .search {
   width: 100px;
@@ -327,5 +330,5 @@ padding-top: 20px;
 
 /* Nav bar */
 .nav-menu {
-  color:white;
+  color:rgb(255, 255, 255);
 }
