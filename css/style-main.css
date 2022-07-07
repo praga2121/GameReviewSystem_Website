@@ -52,7 +52,8 @@ table{
   border-collapse: collapse;
 }
 th{
-  background-color: #7f0fa1;
+  background-color: #843271;
+  
 }
 
 td{
@@ -63,7 +64,8 @@ tr{
 }
 
 thead{
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .1);
+  box-shadow: 2px 2px 2px 2px rgba(74, 22, 137, 0.1);
+  color:white;
 }
 tbody tr:nth-child(n):hover {
   background-color:#ddd;
@@ -88,7 +90,6 @@ footer{
 }
 .featured-container{
   margin-top: -35px;
-  background-image: url("/images/featured-home2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -125,21 +126,22 @@ main{
 
 .table-sort .th-sort-asc,
 .table-sort .th-sort-desc {
-  background: rgb(87, 87, 87);
+  background: rgb(95, 12, 82);
   color:white
 }
 /*TABLE SORT END */
 
-/*SEARCH INPUT WORK IN PROGRESS*/
+
 .search {
   width: 100px;
   height: 100px;
   margin: 40px auto 0;
-  background-color: #ffffff;
+  background-color: #cb1acb;
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease;
   box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, .1);
+  
 }
 .search:before {
   content: '';
@@ -147,11 +149,11 @@ main{
   width: 3px;
   height: 100%;
   position: relative;
-  background-color: #FFCE2F;
+  background-color: white;
   transition: all 0.5s ease;
 }
 .search.open {
-  width: 420px;
+  width: 500px;
 }
 .search.open:before {
   height: 60px;
@@ -164,9 +166,10 @@ main{
   box-shadow: none;
   border: none;
   background: transparent;
-  color: #a1a1a1;
+  color: white;
   padding: 20px 100px 20px 45px;
   font-size: 40px;
+  left: auto;
 }
 .search-box:focus {
   outline: none;
@@ -185,7 +188,7 @@ main{
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  border: 3px solid #FFCE2F;
+  border: 3px solid white;
   display: block;
   position: relative;
   margin-left: 5px;
@@ -199,7 +202,7 @@ main{
   right: -2px;
   top: 30px;
   display: block;
-  background-color: #FFCE2F;
+  background-color: white;
   transform: rotate(-45deg);
   transition: all 0.5s ease;
 }
@@ -211,7 +214,7 @@ main{
   right: -12px;
   top: 40px;
   display: block;
-  background-color: #FFCE2F;
+  background-color: white;
   transform: rotate(-45deg);
   transition: all 0.5s ease;
 }
@@ -237,18 +240,23 @@ main{
 /**/
 .searchTerm {
   width: 300px;
-  border: 3px solid #FFCE2F;
+  border: 3px solid white;
   font-size:1.5em;
   /*border-right: none;*/
   padding: 5px;
   height: 50px;
   border-radius: 5px;
   outline: none;
-  color: #9DBFAF;
+  color: white;
 }
 
 .searchTerm:focus{
-  color: #FFCE2F;
+  color: wheat;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
 }
 
 /*COMPARE BUTTON UNDER THE TABLE*/
@@ -257,7 +265,7 @@ main{
   font-weight: 400;
   letter-spacing: 1px;
   width: 520px;
-  background-color: #FFCE2F;
+  background-color: #cb1acb;
   border: none;
   color: #fff;
   padding: 18px;
@@ -299,20 +307,20 @@ padding-top: 20px;
 }
 
 .lorange {
-  border: 2px solid #fbc02d;
-  color: #fbc02d;
+  border: 2px solid #cb1acb;
+  color: #cb1acb;
 }
 .lorange:hover {
-  background-color: #fbc02d;
+  background-color: #cb1acb;
   transition: all 0.3s ease-in-out;
 }
 
 /**/
 #compare-btn input:hover {
-  background-color: #cfa224;
+  background-color: #cb1acb;
 }
 #compare-btn input:active {
-  background-color: #cfa224;
+  background-color: #cb1acb;
 }
 
 /*COMPARE BUTTON UNDER THE TABLE -END*/

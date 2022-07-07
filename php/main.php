@@ -31,6 +31,7 @@ echo '</head>';
 
 //BODY START
 echo '<body>';
+
 /* NAV BAR*/
 include 'support elements/nav_wide.php';
 /* NAV BAR-END*/
@@ -50,7 +51,7 @@ echo '';
 echo '<main>';
 
 echo '<div class="search">';  
-echo '<input type="search" class="search-box" id="searchInput" onkeyup="tableSearch()" placeholder="Search Here" title="Enter a keyword or number">';
+echo '<input type="search" class="search-box" id="searchInput" onkeyup="tableSearch()" placeholder="Enter Game Name" title="Enter a keyword or number">';
 echo '<span class="search-button">';
 echo '<span class="search-icon"></span>';
 echo '</span>';
