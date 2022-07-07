@@ -1,6 +1,5 @@
 <?php
 require '../config.php';
-include '../support elements/admin-nav.php';
 
 try {
     $pdo = new PDO('mysql:host=' . $dbServername . ';dbname=' . $dbName . ';charset=utf8', $dbUsername);
@@ -53,6 +52,12 @@ if ($stmt_game && $stmt_subject) {
   echo '<!DOCUMENT html>';
   echo '<html>';
   echo '<head>';
+  echo '<link rel="stylesheet" href="css/style-admin-nav.css"/>';
+  echo '<!--Navigation bar-->';
+  echo '<ul>';
+  echo '<li><a href="main.php">Game Review</a></li>';
+  echo '<li style="float: right;"><a class="nav-menu" href="/listing.php">Admin</a></li>';
+  echo '</ul>';
 
   echo '<link rel = "icon" href="../../images/title_icon.png" type="image/x-icon"/>';
   echo '<title>Add Game | Admin Panel</title>';

@@ -29,7 +29,12 @@ $game_id = $row['game_id'];
 </head>
 
 <?php
-include '../support elements/nav_wide.php';
+echo '<link rel="stylesheet" href="css/style-main.css"/>';
+echo '<!--Navigation bar-->';
+echo '<ul>';
+echo '<li><a href="../main.php">Game Review</a></li>';
+echo '<li style="float: right;"><a class="nav-menu" href="../admin panel/login.php">Admin Log-In</a></li>';
+echo '</ul>';
 
 echo '<div class="featured-container-games" style="background-image: url(\'../../images/' . $row["name"] . '.jpg\')">';
 echo ' <div class="overlay">';
@@ -38,12 +43,12 @@ echo '  </div>';
 echo '</div>';
 echo '<main>';
 echo '<h2 class="subject-header">Official Game Site</h2>';
-echo '<a class="black" href="'.$row['url'].'">' . $row["url"] . '</a>';
+echo '<a class="link" href="'.$row['url'].'">' . $row["url"] . '</a>';
 echo '<h2 class="subject-header">Game Description</h2>';
 echo '<p class="game-description">' . $row["game_description"] . '</p>';
 
 echo '<div class="subject-container">';
-echo '<h2 class="subject-header">Game Genre & Pricing</h2>';
+echo '<h2 class="subject-header-2">Game Genre & Pricing</h2>';
 
 $sql_subject = 
 "SELECT `subjects`.`name`, `price` , `duration`

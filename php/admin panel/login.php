@@ -1,6 +1,5 @@
 <?php
 require '../config.php';
-include '../support elements/nav_wide.php';
 
 if (isset($_POST['submitted'])) {
   $email = $_POST['email'];
@@ -17,6 +16,12 @@ if (isset($_POST['submitted'])) {
   echo '<!DOCUMENT html>';
   echo '<html>';
   echo '<head>';
+  echo '<link rel="stylesheet" href="css/style-main.css"/>';
+  echo '<!--Navigation bar-->';
+  echo '<ul>';
+  echo '<li><a href="../main.php">Game Review</a></li>';
+  echo '<li style="float: right;"><a class="nav-menu" href="login.php">Admin Log-In</a></li>';
+  echo '</ul>';
   echo '<title>Login | Admin Panel</title>';
   echo '<link rel="stylesheet" href="../../css/style-admin.css"/>';
   echo '<link rel="preconnect" href="https://fonts.gstatic.com">';

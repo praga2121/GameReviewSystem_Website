@@ -9,7 +9,12 @@
 </head>
 
 <body>
-	<?php include '../support elements/nav_wide.php';?>
+	<link rel="stylesheet" href="css/style-main.css"/>
+	<!--Navigation bar-->'
+	<ul>
+	<li><a href="../main.php">Game Review</a></li>
+	<li style="float: right;"><a class="nav-menu" href="/php/admin panel/login.php">Admin Log-In</a></li>
+	</ul>
 
 	<nav class="navtop">
 		<div>

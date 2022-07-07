@@ -33,14 +33,19 @@ echo '</head>';
 echo '<body>';
 
 /* NAV BAR*/
-include 'support elements/nav_wide.php';
+echo '<link rel="stylesheet" href="css/style-main.css"/>';
+echo '<!--Navigation bar-->';
+echo '<ul>';
+echo '<li><a href="main.php">Game Review</a></li>';
+echo '<li style="float: right;"><a class="nav-menu" href="admin panel/login.php">Admin Log-In</a></li>';
+echo '</ul>';
 /* NAV BAR-END*/
 
 /*HEADER PAGE*/
 echo '<!--Featured image-->';
 echo '<div class="featured-container">';
 echo '<div class="overlay">';
-echo '<h1 class="top-intro-header">Discover Game Reviews</h1>';
+echo '<h1 class="top-intro-header">Game Review Blog <br><br>Discover Games Here</h1>';
 echo '</div>';
 echo '</div>';
 echo ''; 
