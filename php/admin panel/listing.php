@@ -19,11 +19,11 @@ if (isset($_POST['added'])) {
     }
   }
 } else {
-  echo '<link rel="stylesheet" href="css/style-admin-nav.css"/>';
+  echo '<link rel="stylesheet" href="css/style-main.css"/>';
   echo '<!--Navigation bar-->';
   echo '<ul>';
   echo '<li><a href="../main.php">Game Review</a></li>';
-  echo '<li style="float: right;"><a class="nav-menu" href="admin panel/listing.php">Admin</a></li>';
+  echo '<li style="float: right;"><a class="nav-menu" href="login.php">Admin Log-In</a></li>';
   echo '</ul>';
   echo '<link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">';
   echo '<link rel = "icon" href="../../images/title_icon.png" type="image/x-icon"/>';
