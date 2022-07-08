@@ -1,6 +1,7 @@
 <?php
 require '../config.php';
 include '../support elements/admin-nav-listing.php';
+
 try {
     $pdo = new PDO('mysql:host=' . $dbServername . ';dbname=' . $dbName . ';charset=utf8', $dbUsername);
   } catch (PDOException $exception) {
@@ -10,7 +11,7 @@ try {
 
 if (isset($_POST['added'])) {
     $game_name = $_POST["name"];
-    $url =  $_POST["websitelink"];
+    $url =  $_POST["url"];
     $game_description = $_POST["description"];
     $subjects = $_POST["subject"];
     $subjects = array_values(array_filter($subjects, 'array_filter'));
@@ -52,11 +53,6 @@ if ($stmt_game && $stmt_subject) {
   echo '<!DOCUMENT html>';
   echo '<html>';
   echo '<link rel="stylesheet" href="css/style-main.css"/>';
-  echo '<!--Navigation bar-->';
-  echo '<ul>';
-  echo '<li><a href="../main.php">Game Review</a></li>';
-  echo '<li style="float: right;"><a class="nav-menu" href="login.php>Game Listing</a></li>';
-  echo '</ul>';
 
   echo '<link rel = "icon" href="../../images/title_icon.png" type="image/x-icon"/>';
   echo '<title>Add Game | Admin Panel</title>';
@@ -65,6 +61,7 @@ if ($stmt_game && $stmt_subject) {
   echo '<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">';
   echo '</head>';
   echo '<body>';
+
   echo '<div id="main-container">';
   echo '<h1>Database Updated Successfully</h1>';
   echo '<a style="color:black" href = "listing.php">Back to game listings</a>';
@@ -76,11 +73,13 @@ if ($stmt_game && $stmt_subject) {
 }
 }
 } else {
-$query_select_subject = "SELECT * FROM game_website.subjects";
 
-$subjects = $pdo->query($query_select_subject)->fetchAll();
 
-?>
+  $query_select_all_subject = "SELECT * FROM game_website.subjects";
+  
+  $subjects = $pdo->query($query_select_all_subject)->fetchAll();
+
+  ?>
 
 <!DOCUMENT html>
   <html>
@@ -103,8 +102,8 @@ $subjects = $pdo->query($query_select_subject)->fetchAll();
     				<input type="text" name="name" id="name" />
     				<br/>
     				<br/>
-            <label for="websitelink">Website Link: </label>
-    				<input type="text" name="websitelink" id="websitelink" />
+            <label for="url">Website Link: </label>
+    				<input type="text" name="url" id="url" />
     				<br/>
     				<br/>
     				<textarea rows="4" cols="104" name="description" id="description" placeholder="Game Description"></textarea>
