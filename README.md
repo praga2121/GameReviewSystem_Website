@@ -1,7 +1,7 @@
-# GameReview_5007CEM
-5007CEM.CT1.APR2022.IICP: WEB DEVELOPMENT
+# Game Review Website_5007CEM
 
-5007CEM: Web Development Assignment (April 2022 Session)
+5007CEM.CT1.APR2022.IICP: WEB DEVELOPMENT ASSIGNMENT (APRIL 2022 SESSION)
+
 
 1. The aim of this project is to provide an optimal and constructive advice on whether how worthy is the game would be to them in terms of time and value of their own money. This website will also have features as Reviews and Admin side control for the datas. 
 
