@@ -11,8 +11,8 @@
 
 4. Import the databases (game_website.sql and api_Reviews.sql) into PHPMyAdmin in separate Database folders. 
 
-5. Lastly to run the site, go to php/config.php file and at the line 2, [$dbServername = "localhost:3344";]//Follow MySQL Port number from your machine.". 
+5. Lastly to run the site, go to php/config.php file and at the line 2, [$dbServername = "localhost:3306";]//Follow MySQL Port number from your machine.". 
 
-6. From Action 5, Do the same to config/Database.php at line 4, [private $host = 'localhost:3344';] //Follow MySQL Port number from your machine.". 
+6. From Action 5, Do the same to config/Database.php at line 4, [private $host = 'localhost:3306';] //Follow MySQL Port number from your machine.". 
 
 7. Feel Free to explore, Thank you. Happy Coding!!!
