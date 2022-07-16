@@ -29,16 +29,20 @@ $game_id = $row['game_id'];
 </head>
 
 <?php
+/* Site Navigation bar*/
 echo '<link rel="stylesheet" href="css/style-main.css"/>';
 echo '<!--Navigation bar-->';
 echo '<ul>';
 echo '<li><a href="../main.php">Game Review</a></li>';
+echo '<li><a href="../search.php">Ranking</a></li>';
 echo '<li style="float: right;"><a class="nav-menu" href="../admin panel/login.php">Admin Log-In</a></li>';
+echo '<li style="float: right;"><a class="nav-menu" href="../login.php">User Login</a></li>';
 echo '</ul>';
+/* Navigation bar end*/
 
 echo '<div class="featured-container-games" style="background-image: url(\'../../images/' . $row["name"] . '.jpg\')">';
 echo ' <div class="overlay">';
-echo '<h1 style="padding-top: 250px; padding-bottom: 250px; color: #FFFFFF;">' . $row["name"] . '</h1>';
+echo '<h1 style="padding-top: 250px; padding-bottom: 250px; color: #FFFFFF; left:20px">' . $row["name"] . '</h1>';
 echo '  </div>';
 echo '</div>';
 echo '<main>';

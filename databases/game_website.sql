@@ -206,8 +206,7 @@ ALTER TABLE `gamedetails`
 --
 ALTER TABLE `reviews`
   ADD PRIMARY KEY (`review_id`),
-  ADD KEY `reviews_ibfk_1` (`game_id`),
-  ADD KEY `reviews_ibfk_2` (`subject_id`);
+  ADD KEY `reviews_ibfk_1` (`game_id`);
 
 --
 -- Indexes for table `subjects` 
@@ -259,7 +258,7 @@ ALTER TABLE `gamedetails`
 --
 ALTER TABLE `reviews`
   ADD CONSTRAINT `reviews_ibfk_1` FOREIGN KEY (`game_id`) REFERENCES `games` (`game_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `reviews_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`subject_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

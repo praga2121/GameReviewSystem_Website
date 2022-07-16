@@ -4,6 +4,7 @@
 body{
   margin: 0;
   padding: 0;
+  background-color: rgb(95, 12, 82);
 }
 ul {
   list-style-type: none;
@@ -15,22 +16,33 @@ li {
   display: inline;
   margin-right: 50px;
 }
-a, h1,h2, th, td, h3,input, p{
+a, th, td, h3,input, p{
   font-family: 'Montserrat';
   
 }
+h1{
+  font-size: 50px;
+  color: white;
+  font-style: italic;
+  left: 100%;
+}
+h2{
+  font-family: 'Montserrat';
+  font-style: italic;
+}
+
 .bold{
   font-weight: bold;
 }
 label{
   font-family: 'Montserrat';
-  color: #333;
+  color: white;
   display: inline-block;
   width: 422px;
 }
 .login-label{
   font-family: 'Montserrat';
-  color: #333;
+  color: wheat;
   display: inline-block;
   width: 200px;
 }
@@ -39,9 +51,9 @@ label{
   justify-content: center; 
   align-items: center;
   }
-.price-label{
+.genre-label{
   font-family: 'Montserrat';
-  color: #333;
+  color: white;
   display: inline-block;
   width: 400px;
   margin-bottom:20px ;
@@ -56,9 +68,7 @@ label{
 	display:flex;
 	justify-content: center;
 }
-h1{
-  font-size: 50px;
-}
+
 h2{
   color: white;
 }
@@ -82,7 +92,7 @@ a{
   color: #000;
 }
 .add-button{
-  color: #333333;
+  color: white;
   margin-left: 45%;
   border-style: solid;
   padding: 10px;
@@ -110,7 +120,7 @@ a{
   padding: 10px;
 }
 .delete-button{
-  color: #c00000;
+  color: #ffd000;
   text-align: right;
 }
 table{
@@ -121,11 +131,12 @@ table{
   border-collapse: collapse;
 }
 th{
-  background-color: #333333;
+  background-color: purple;
   color:#eee;
 }
 td{
   width:1%;
+  color: white;
 }
 tr{
   transition: all .2s ease-in-out;

@@ -21,24 +21,29 @@
 			<h1>How did you feel about this game?</h1> </div>
 	</nav>
 	<div class="content home">
+
 		<h2>Reviews</h2>
-		<p>Check out the below reviews for this game.</p>
+		<p>Check the Game Reviews and Ratings Here!</p>
 		<div class="reviews"></div>
 
 
 		<script>
 		const reviews_page_id = 1;
 		
-		// get code from review.php page by `game_id`
+		// Retrieve game-id codes from review.php
 		fetch("reviews.php?page_id=" + reviews_page_id).then(response => response.text()).then(data => {
-			// find element with `.reviews` and assign it all that code 
+
+			// Search reviews element
 			document.querySelector(".reviews").innerHTML = data;
 			document.querySelector(".reviews .write_review_btn").onclick = event => {
-				// prevent default behaviour of link "Write Button" 
+
+				// To avoid Write Button Default.
 				event.preventDefault();
-				// change display of "Write Review" section from `none` that displays nothing to `block`
+
+				// change display of "Write Review" 
 				document.querySelector(".reviews .write_review").style.display = 'block';
-				// when "write review" pressed the focus shift to "Your name" field. So we can start typing immediately
+
+				// when "write review" pressed the focus shift to "Your name" field. So we can start typing immediately 
 				document.querySelector(".reviews .write_review input[name='name']").focus();
 			};
 			// When "submit review" is pressed this event is activated

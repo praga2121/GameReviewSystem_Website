@@ -13,15 +13,21 @@ if (isset($_POST['submitted'])) {
   }
 } else {
   $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  
   echo '<!DOCUMENT html>';
   echo '<html>';
   echo '<head>';
+
+/* Site Navigation bar*/
   echo '<link rel="stylesheet" href="css/style-main.css"/>';
   echo '<!--Navigation bar-->';
   echo '<ul>';
   echo '<li><a href="../main.php">Game Review</a></li>';
+  echo '<li><a href="../search.php">Ranking</a></li>';
   echo '<li style="float: right;"><a class="nav-menu" href="login.php">Admin Log-In</a></li>';
   echo '</ul>';
+/* Navigation bar end*/
+
   echo '<title>Login | Admin Panel</title>';
   echo '<link rel="stylesheet" href="../../css/style-admin.css"/>';
   echo '<link rel="preconnect" href="https://fonts.gstatic.com">';
@@ -31,7 +37,7 @@ if (isset($_POST['submitted'])) {
   echo '<body>';
   echo '<div class="login-container">';
   echo '<div class="form">';
-  echo '<h2>Please Login</h2>';
+  echo '<h2>Enter Admin Credentials</h2>';
   echo '<form action="login.php" method="POST">';
   if (strpos($actual_link, "error=true") == true) {
     echo '<span class = "error" style="color: red;">Wrong email or password</span>';
@@ -48,6 +54,7 @@ if (isset($_POST['submitted'])) {
   echo '</div>';
   echo '</div>';
   echo '</body>';
+  
   echo '</html>';
 }
 ?>

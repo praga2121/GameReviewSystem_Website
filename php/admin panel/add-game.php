@@ -66,6 +66,10 @@ if ($stmt_game && $stmt_subject) {
   echo '<h1>Database Updated Successfully</h1>';
   echo '<a style="color:black" href = "listing.php">Back to game listings</a>';
   echo '</div>';
+  
+  /* Website Footer*/
+include 'support elements/footer.php';
+/* End Of footer*/
   echo '</body>';
   echo '</html>';
 } else {
@@ -118,7 +122,7 @@ if ($stmt_game && $stmt_subject) {
               <div>
                 <!-- input's name has '[]' in the end to signify that post will be a 2 dimensional array where items are grouped by subject_id and have -->
                 <input type="checkbox" name="subject[<?= $increment?>][name]" value="<?= $subject["subject_id"]?>" />
-                <label class="price-label"for="subjects" ><?= $subject["name"] ?></label>
+                <label class="game-label"for="subjects" ><?= $subject["name"] ?></label>
 
                 <input type="number" name="subject[<?= $increment?>][price]" min="1" disabled placeholder="Enter Price"/>
                 <input type="number" name="subject[<?= $increment?>][duration]" min="1" step=".1" disabled placeholder="Enter Released Since"/>
@@ -127,7 +131,7 @@ if ($stmt_game && $stmt_subject) {
             $increment = $increment + 1; 
             endforeach ?>
             </div>
-
+              <br>
             <input class="save-button" type="submit" name="submit" value="Add Game" />
     				<input type='hidden' name='added' value='true' /> 
           </form>

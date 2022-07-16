@@ -1,5 +1,5 @@
 <?php
-$dbServername = "localhost:3344"; //Follow MySQL Port number from your machine. 
+$dbServername = "localhost:3306"; //Follow MySQL Port number from your machine. 
 $dbUsername = "root";
 $dbPassword = "";
 $dbName = "game_website";
