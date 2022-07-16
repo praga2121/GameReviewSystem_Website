@@ -51,7 +51,6 @@ if (isset($_POST['submitted'])) {
   echo '<body>';
 
 /* Site Navigation bar*/
-echo '<link rel="stylesheet" href="css/style-main.css"/>';
 echo '<!--Navigation bar-->';
 echo '<ul>';
 echo '<li><a href="main.php">Game Review</a></li>';
@@ -63,9 +62,9 @@ echo '</ul>';
 
   /*Site Header Page*/
   echo '<!--Featured image-->';
-  echo '<div class="featured-container">';
+  echo '<div class="featured-container-login">';
   echo '<div class="overlay">';
-  echo '<h1 class="top-intro-header">Game Review Blog </h1>';
+  echo '<h1 class="top-intro-header">Got an Account to Login? </h1>';
   echo '</div>';
   echo '</div>';
   echo ''; 

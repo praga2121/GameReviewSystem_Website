@@ -18,7 +18,7 @@ li {
   margin-right: 50px;
 }
 
-a, h1, th, h3{
+a, h1, th{
   font-family: 'Montserrat';
 }
 
@@ -28,7 +28,12 @@ h2{
   font-style: italic;
   font-size: x-large;
   font-weight: 400;
-  
+}
+h3{
+  font-style: italic;
+  color: wheat;
+  font-size: larger;
+  text-align: center;
 }
 td{
   color: wheat;
@@ -141,6 +146,26 @@ footer{
   background-size: cover;
   text-align: start;
   opacity: 0.8;
+}
+.featured-container-login{
+  margin-top: -35px;
+  background-image: url("../images/Honkai Impact 3rd.jpg");
+  position: relative;
+  position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: purple;
+}
+.featured-container-contact{
+  margin-top: -35px;
+  background-image: url("../images/contact.jpg");
+  position: relative;
+  position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: purple;
 }
 main{
   text-align: center;
@@ -378,7 +403,9 @@ padding-top: 20px;
 /* Nav bar */
 .nav-menu {
   color:rgb(255, 255, 255);
+  
 }
+
 
 label{
   color: white;
@@ -387,6 +414,4 @@ label{
   font-size: large;
 }
 
-twitter-tweet{
-  left: 50%;
-}
+

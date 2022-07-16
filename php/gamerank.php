@@ -46,7 +46,7 @@ echo '</ul>';
 echo '<!--Featured image-->';
 echo '<div class="featured-container-search">';
 echo '<div class="overlay">';
-echo '<h1 class="top-intro-header">Game Review Blog </h1>';
+echo '<h1 class="top-intro-header"> Ranked Games Right Now</h1>';
 echo '</div>';
 echo '</div>';
 echo ''; 
