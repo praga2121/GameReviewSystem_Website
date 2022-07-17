@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 16, 2022 at 02:24 PM
+-- Generation Time: Jul 17, 2022 at 06:27 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -87,14 +87,14 @@ CREATE TABLE `games` (
 --
 
 INSERT INTO `games` (`game_id`, `name`, `overall_rating`, `game_description`, `url`) VALUES
-(56, 'Tales Of Arise', '4.7', 'Tales of Arise is an action role-playing game developed and published by Bandai Namco Entertainment for Microsoft Windows, PlayStation 4, PlayStation 5, Xbox One, and Xbox Series X/S. The seventeenth main entry in the Tales series, it was originally planned to release in 2020 but was delayed to September 2021 due to internal quality issues and the ability to launch the game on more platforms. \r\n\r\n\r\n       ', 'https://www.bandainamcoent.com/games/tales-of-arise'),
+(56, 'Tales Of Arise', '4.3', 'Tales of Arise is an action role-playing game developed and published by Bandai Namco Entertainment for Microsoft Windows, PlayStation 4, PlayStation 5, Xbox One, and Xbox Series X/S. The seventeenth main entry in the Tales series, it was originally planned to release in 2020 but was delayed to September 2021 due to internal quality issues and the ability to launch the game on more platforms. \r\n\r\n\r\n       ', 'https://www.bandainamcoent.com/games/tales-of-arise'),
 (57, 'Elden Ring', '4.5', 'Elden Ring is a 2022 action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment. It was directed by Hidetaka Miyazaki and made in collaboration with the fantasy novelist George R. R. Martin, who provided material for the setting.   ', 'https://en.bandainamcoent.eu/elden-ring/elden-ring'),
 (58, 'Forza Horizon 5', '3.0', 'Forza Horizon 5 is a 2021 racing video game developed by Playground Games and published by Xbox Game Studios. It is the fifth Forza Horizon title and twelfth main instalment in the Forza series. The game is set in a fictionalised representation of Mexico. It was released on 9 November 2021 for Microsoft Windows, Xbox One, and Xbox Series X/S. \r\n', 'https://www.xbox.com/en-US/games/forza-horizon-5'),
 (59, 'Honkai Impact 3rd', '4.0', 'Honkai Impact 3rd is a free-to-play 3D action role-playing game (originally a mobile exclusive) developed and published by miHoYo, and later ported to Microsoft Windows. It is the spiritual successor to Houkai Gakuen 2, using many characters from the previous title in a separate story. \r\n    ', 'https://honkaiimpact3.hoyoverse.com/global/en-us/home'),
 (60, 'Star Wars Battlefront II', '0', 'Star Wars Battlefront II is an action shooter video game based on the Star Wars franchise. It is the fourth main installment of the Star Wars: Battlefront series, and a sequel to the 2015 reboot of the series. It was developed by DICE, in collaboration with Criterion Games and Motive Studios, and published by Electronic Arts. \n The game was released worldwide on November 17, 2017, for the PlayStation 4, Xbox One, and Microsoft Windows. The game features both single-player and multiplayer modes, and overall includes more content than its predecessor. The single-player campaign of the game is set between the films Return of the Jedi and The Force Awakens, and follows an original character, Iden Versio, the commander of an Imperial special ops squad, who defects to the New Republic after becoming disillusioned with the Galactic Empires tactics. Most of the story takes place during the final year of the Galactic Civil War, before the Empires definitive defeat at the Battle of Jakku.  ', 'https://www.ea.com/games/starwars/battlefront/star-wars-battlefront-2'),
 (61, 'Halo Infinite', '1.0', 'Halo Infinite is a 2021 first-person shooter game developed by 343 Industries and published by Xbox Game Studios. It is the sixth mainline entry in the Halo series, and the third in the \"Reclaimer Saga\" following Halo 5: Guardians (2015). The campaign follows the human supersoldier Master Chief and his fight against the enemy Banished on the Forerunner ringworld Zeta Halo, also known as Installation 07. \n Unlike previous installments in the series, the multiplayer portion of the game is free-to-play. ', 'https://www.halowaypoint.com/'),
 (62, 'Hitman 3', '3.0', 'Hitman 3 (stylized as HITMAN III) is a 2021 stealth game developed and published by IO Interactive. It is the sequel to the 2018 video game Hitman 2, the eighth main installment in the Hitman series and the third and final entry in the World of Assassination trilogy. \n Concluding the plot arc started in Hitman, the single-player storyline follows genetically-engineered assassin Agent 47 and his allies as they hunt down the leaders of the secretive organization Providence, which controls the worlds affairs and was partially responsible for agent 47 creation and upbringing. ', 'https://hitman.com/global/'),
-(64, 'Valorant', '3.7', 'Valorant (stylized as VALORANT) is a free-to-play first-person hero shooter developed and published by Riot Games, for Microsoft Windows. First teased under the codename Project A in October 2019, the game began a closed beta period with limited access on April 7, 2020, followed by an official release on June 2, 2020.\n  The development of the game started in 2014. Valorant takes inspiration from the Counter-Strike series of tactical shooters, borrowing several mechanics such as the buy menu, spray patterns, and inaccuracy while moving. ', 'https://playvalorant.com/en-us/');
+(64, 'Valorant', '3.5', 'Valorant (stylized as VALORANT) is a free-to-play first-person hero shooter developed and published by Riot Games, for Microsoft Windows. First teased under the codename Project A in October 2019, the game began a closed beta period with limited access on April 7, 2020, followed by an official release on June 2, 2020.\n  The development of the game started in 2014. Valorant takes inspiration from the Counter-Strike series of tactical shooters, borrowing several mechanics such as the buy menu, spray patterns, and inaccuracy while moving. ', 'https://playvalorant.com/en-us/');
 
 -- --------------------------------------------------------
 
@@ -130,7 +130,10 @@ INSERT INTO `reviews` (`review_id`, `game_id`, `page_id`, `name`, `content`, `ra
 (64, 64, 1, 'Yuuta ', 'Test 123 123 Test', 4, '2022-07-14 21:03:23'),
 (65, 91, 1, 'Praga', 'Cool game ', 5, '2022-07-14 21:06:12'),
 (66, 62, 1, 'Jeremy', 'Favorite game of the year. ', 3, '2022-07-14 23:43:24'),
-(67, 56, 1, 'Billy', 'Love the Characters. ', 4, '2022-07-16 11:38:58');
+(67, 56, 1, 'Billy', 'Love the Characters. ', 4, '2022-07-16 11:38:58'),
+(68, 56, 1, 'Lizzy', 'Nice game', 3, '2022-07-17 20:59:58'),
+(69, 64, 1, 'Lizzy', 'Nice Game. ', 3, '2022-07-17 21:03:43'),
+(70, 103, 1, 'Pragatheswaran', 'Nice game. ', 5, '2022-07-17 21:05:53');
 
 -- --------------------------------------------------------
 
@@ -194,6 +197,15 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`userID`, `email`, `password`) VALUES
+(1, 'holloway@mail.com', 'holloway123'),
+(2, 'alban@mail.com', 'alban123'),
+(3, 'kevin@mail.com', 'kevin123');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -243,13 +255,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `games`
 --
 ALTER TABLE `games`
-  MODIFY `game_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
+  MODIFY `game_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
 
 --
 -- AUTO_INCREMENT for table `reviews`
 --
 ALTER TABLE `reviews`
-  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT for table `subjects`

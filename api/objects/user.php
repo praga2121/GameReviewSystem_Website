@@ -23,6 +23,8 @@ class User{
                     userID, email, password
                 FROM
                     ". $this->table_name ." 
+                WHERE
+                    email LIKE ?
                 ORDER BY
                     userID ASC";
     
@@ -35,9 +37,7 @@ class User{
     
         // bind
         $stmt->bindParam(1, $keywords);
-        $stmt->bindParam(2, $keywords);
-        $stmt->bindParam(3, $keywords);
-    
+         
         // execute query
         $stmt->execute();
     
