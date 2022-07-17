@@ -64,7 +64,7 @@ WHERE `gamedetails`.`game_id` = '.$game_id.' AND `subjects`.`subject_id` = `game
 $result_subject = mysqli_query($conn, $sql_subject);
 $row_number = mysqli_num_rows($result_subject);
 
-
+//To retrieve and display game genre & pricing datas. 
 echo '<div class="subject-table-container">';
 
 if ($row_number > 0) {

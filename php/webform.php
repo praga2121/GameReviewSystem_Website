@@ -12,14 +12,13 @@
             $messageSubject = $_POST['subject'];
             $message= $_POST['message'];
 
-            $to = "vpragatheswaran@gmail.com";
+            $to = "someone@mail.com";
             $body = "";
 
             $body .= "From: ".$userName. "\r\n";
             $body .= "Email: ".$userEmail. "\r\n";
             $body .= "Message: ".$message. "\r\n";
             
-            //mail($to,$messageSubject,$body);
 
             $message_sent = true;
         }

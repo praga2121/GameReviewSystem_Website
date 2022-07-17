@@ -64,12 +64,19 @@ if ($stmt_game && $stmt_subject) {
 
   echo '<div id="main-container">';
   echo '<h1>Database Updated Successfully</h1>';
-  echo '<a style="color:black" href = "listing.php">Back to game listings</a>';
+  echo '<a style="color:white" href = "listing.php">Back to game listings</a>';
   echo '</div>';
   
   /* Website Footer*/
-include 'support elements/footer.php';
-/* End Of footer*/
+  echo '<footer>';
+  echo '<link rel="stylesheet" href="../css/style-main.css"/>';
+  echo '<h3 style="padding: 10px; color: #FFFFFF;"></h3>';
+  echo '<ul>';
+  echo '<li style="float: right;"><a href="webform.php">Contact Us</a></li>';
+  echo '</ul>';
+  echo '</footer>';
+      /* End Of footer*/
+
   echo '</body>';
   echo '</html>';
 } else {
