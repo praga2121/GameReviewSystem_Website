@@ -31,7 +31,7 @@ if (isset($_POST['submitted'])) {
   } 
 
 } else {
-  $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; //uh idk if i should remove this cos idk what u do with it-
+  $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; 
 
   //Site Header
   echo '<!DOCUMENT html>';

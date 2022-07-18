@@ -6,7 +6,6 @@ class User{
     private $table_name = "user";
   
     // object properties 
-    //just add or remove these here based on ur table structure, suggested to name as same as the one u have in db so u dont confuse
     public $userID;
     public $email;
     public $password;
